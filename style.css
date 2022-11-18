@@ -348,9 +348,11 @@ body::-webkit-scrollbar-thumb {
 
 /****** MOB SIDEBAR ******/
 .mob-sidebar {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 220px;
-  height: 100%;
   background: var(--side-header-bg);
   padding: 0 15px;
   z-index: 12;
