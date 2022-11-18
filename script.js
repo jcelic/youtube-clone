@@ -60,19 +60,3 @@ window.addEventListener('click', (e) => {
 })
 
 
-
-// TO TOP ARROW BUTTON
-const scrollBtn = document.querySelector('.scroll-top');
-
-window.addEventListener('scroll', () => {
-  scrollBtn.classList.toggle('active', window.scrollY > 300);
-})
-
-scrollBtn.addEventListener('click', scrollToTop);
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  })
-}
