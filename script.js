@@ -45,19 +45,18 @@ openNavBtn.addEventListener('click', () => {
 })
 
 closeBtn.addEventListener('click', () => {
-  closeMobSidebar();
+  mobSidebar.classList.remove('active');
+  menuOverlay.classList.remove('active');
+  document.body.style.overflowY = 'auto';
 })
 
 
 window.addEventListener('click', (e) => {
   if (e.target.classList.contains('menu-overlay')) {
-    closeMobSidebar();
+    mobSidebar.classList.remove('active');
+    menuOverlay.classList.remove('active');
+    document.body.style.overflowY = 'auto';
   }
 })
 
 
-function closeMobSidebar() {
-  mobSidebar.classList.remove('active');
-  menuOverlay.classList.remove('active');
-  document.body.style.overflowY = 'auto';
-}
