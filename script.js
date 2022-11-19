@@ -44,9 +44,7 @@ openNavBtn.addEventListener('click', () => {
   document.body.style.overflowY = 'hidden';
 })
 
-closeBtn.addEventListener('click', () => {
-  closeMobSidebar();
-})
+closeBtn.addEventListener('click', closeMobSidebar);
 
 
 window.addEventListener('click', (e) => {

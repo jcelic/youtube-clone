@@ -546,7 +546,7 @@ body::-webkit-scrollbar-thumb {
   .header__left__open-btn {
     pointer-events: auto;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-right: 10px;
     transition: all .3s;
   }
