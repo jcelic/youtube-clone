@@ -2,6 +2,7 @@
 const darkToggle = document.querySelector('.dark-toggle');
 const toggleIcon = document.querySelector('.moon');
 const icons = document.querySelectorAll('.icon');
+const toggleTooltip = document.querySelector('.dark-toggle .tooltip span');
 
 darkToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark');
@@ -15,7 +16,7 @@ darkToggle.addEventListener('click', () => {
       icon.src = `img/icons/${dataName}-white.svg`;
     })
 
-    darkToggle.setAttribute('title', 'Light Mode');
+    toggleTooltip.textContent = 'Light Mode';
 
   } else {
     toggleIcon.classList.replace('fa-sun', 'fa-moon');
@@ -26,7 +27,7 @@ darkToggle.addEventListener('click', () => {
       icon.src = `img/icons/${dataName}.svg`;
     })
 
-    darkToggle.setAttribute('title', 'Dark Mode');
+    toggleTooltip.textContent = 'Dark Mode';
   }
 })
 

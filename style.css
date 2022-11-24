@@ -246,18 +246,69 @@ body::-webkit-scrollbar-thumb {
   color: var(--text-primary);
 }
 
-.header__icons .header__icons__avatar {
-  width: 35px;
-  margin-left: 10px;
+.header__icons__profile-icon {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__icons__profile-icon .header__icons__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.header__icons__profile-icon:hover {
+  cursor: pointer;
 }
 
 
-/* Number of notifications */
+
+
+/* TOOLTIPS */
+.tooltip {
+  position: absolute;
+  bottom: -20px;
+  display: none;
+}
+
+.tooltip span {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background: gray;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.header__search__search-btn:hover .tooltip,
+.header__search__voice-btn:hover .tooltip,
+.header__icons .dark-toggle:hover .tooltip,
+.header__icons__icon:hover .tooltip,
+.header__icons__profile-icon:hover .tooltip {
+  display: block;
+}
+
+
+.header__icons__profile-icon .tooltip {
+  right: 5px;
+}
+
+
+
+
+/* Notifications Icon */
 .header__icons .pos-relative {
   position: relative;
 }
 
-.header__icons .pos-relative::before {
+.header__icons__icon.pos-relative .tooltip {
+  bottom: -25px;
+}
+
+
+/* .header__icons .pos-relative::before {
   content: '5';
   position: absolute;
   top: 5px;
@@ -271,7 +322,23 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
   font-size: 10px;
+} */
+
+.header__icons .pos-relative .notifications-number {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ff0019;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
 }
+
 
 
 
@@ -530,15 +597,27 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
   }
 
-  .header__icons .pos-relative::before {
+  /* .header__icons .pos-relative::before {
+    width: 13px;
+    height: 13px;
+    top: 2px;
+    right: 2px;
+  } */
+
+  .header__icons .pos-relative .notifications-number {
     width: 13px;
     height: 13px;
     top: 2px;
     right: 2px;
   }
 
+  .header__icons__icon.pos-relative .tooltip {
+    bottom: -30px;
+  }
+
   .header__icons .header__icons__avatar {
     width: 25px;
+    height: 25px;
     margin-left: 5px;
   }
 }

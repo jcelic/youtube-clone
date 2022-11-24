@@ -120,34 +120,61 @@
     <div class="header__search">
       <input type="text" placeholder="Search">
 
-      <div class="header__search__search-btn" title="Search">
+      <div class="header__search__search-btn">
+        <div class="tooltip">
+          <span>Search</span>
+        </div>
         <img class="icon" data-name="search" src="img/icons/search.svg" alt="">
       </div>
 
-      <div class="header__search__voice-btn" title="Search with your voice">
+      <div class="header__search__voice-btn">
+        <div class="tooltip">
+          <span>Search with your voice</span>
+        </div>
         <img class="icon" data-name="voice-search-icon" src="img/icons/voice-search-icon.svg" alt="">
       </div>
     </div>
 
     <!-- Header Icons -->
     <div class="header__icons">
-      <div class="header__icons__icon dark-toggle" title="Dark Mode">
+      <div class="header__icons__icon dark-toggle">
+        <div class="tooltip">
+          <span>Dark Mode</span>
+        </div>
         <i class="fas fa-moon moon"></i>
       </div>
 
       <div class="header__icons__icon sm-d-none">
+        <div class="tooltip">
+          <span>Create</span>
+        </div>
         <img class="icon" data-name="upload" src="img/icons/upload.svg" alt="">
       </div>
 
       <div class="header__icons__icon sm-d-none">
+        <div class="tooltip">
+          <span>YouTube Apps</span>
+        </div>
         <img class="icon" data-name="youtube-apps" src="img/icons/youtube-apps.svg" alt="">
       </div>
 
       <div class="header__icons__icon pos-relative">
+        <div class="tooltip">
+          <span>Notifications</span>
+        </div>
+        <div class="notifications-number">
+          <span>5</span>
+        </div>
         <img class="icon" data-name="notifications" src="img/icons/notifications.svg" alt="">
       </div>
 
-      <img class="header__icons__avatar" src="img/channel-pictures/my-channel.png" alt="">
+      <div class="header__icons__profile-icon">
+        <div class="tooltip">
+          <span>My Channel</span>
+        </div>
+        <img class="header__icons__avatar" src="img/channel-pictures/my-channel.png" alt="">
+      </div>
+
     </div>
   </header>
   <!-- END OF HEADER -->
@@ -463,11 +490,6 @@
         </div>
       </div>
     </section>
-
-
-
-
-
   </main>
   <!-- END OF VIDEOS GRID -->
 
